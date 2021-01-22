@@ -6,11 +6,9 @@
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.password">root123</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/collegedb</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mousedb</property>
         <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
-        <property name="show_sql">true</property>
-        <property name="format_sql">true</property>
-        <mapping class="com.xworkz.college.dto.CollegeDTO"/>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping class="com.xworkz.mouse.dto.MouseDTO"/>
     </session-factory>
 </hibernate-configuration>
